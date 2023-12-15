@@ -37,12 +37,13 @@ The PIML_SLFNN.m and PIML_RPNN.m routines require (i) the training and test data
 The analytic functionals of the SIM approximations provided by IE and CSP are provided for the given SPS problems; see Appendix in the manuscript.
 
 **Reproducing our results**
+
 For each SPS problem 
 (i)   run createTrainTestSets.m to get the training and test data sets (already created as "Problem_name"Train and "Problem_name"Test mat files)
 (ii)  run PIML_SLFNN.m and PIML_RPNN.m to train the PIML scheme and evaluate its accuracy (pretrained NNs in learned_PI_SLFNN and learned_PI_RPNN mat files)
 (iii) run Plots.m to reproduce the plots in the manuscript (select figure ID)
 
-# Finding SIM approximations with the PIML schem for your own SPS problem
+# Finding SIM approximations with the PIML scheme for your own SPS problem
 
 The following is an outline of the steps you would need to follow (for further details see Algorithms 2.1, SM3.1 and SM3.2 in the manuscript)
 1) Given your SPS system, set up the RHS and Jacobian external functions 
